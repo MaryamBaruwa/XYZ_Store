@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e8475e47e5.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div id="main-nav">
+                <a href="#" id="logo">
+                    <h1>XYZ</h1>
+                </a>
+                <a><i class="fa fa-lock"></i><sup>3</sup></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-content">
+
+                    <h3>CHECKOUT</h3>
+
+                    <div class="delivery-address">
+                        <p><strong>DELIVERY ADDRESS</strong></p>
+                        <ul>
+                            <li><input type="text" name="FirstName" placeholder="FIRSTNAME"><input type="text" name="LastName" placeholder="LASTNAME"></li>
+                            <li><input type="text" name="address" placeholder="STREET ADDRESS, P.O BOX"></li>
+                            <li><input type="text" name="city" placeholder="CITY/TOWN"><input type="text" name="State" placeholder="STATE"></li>
+                            <li><input type="email" name="Email" placeholder="EMAIL"><input type="tel" name="Telephone" placeholder="PHONE NO."></li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">SAVE & CONTINUE</a>
+                    </div>
+
+                    <div class="delivery-option">
+                        <p><strong>DELIVERY OPTION</strong></p>
+                    <table>
+                        <tr>
+                            <td>N 1,500</td>
+                            <td>Door Delivery:<br>Delivered on or before May 14</td>
+                            <td><br><input type="radio" name="delivery" id="door" value="door" checked></td>
+                        </tr>
+                        <tr>
+                            <td>N 550</td>
+                            <td>Pick up Station<br>Delivered on or before May 14</td>
+                            <td><br><input type="radio" name="delivery" id="pick" value="pick"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="#">SELECT A PICKUP STATION</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    </div>
+
+                    <div class="payment">
+                        <p><strong>PAYMENT<span>N 3,589.24</span></strong></p>
+                        <div>
+                            <p>How do you want to pay for your order?</p>
+
+                            <form method="POST">
+                                <input type="radio" id="pay" name="payment" value="pay">
+                                <label for="pay">Pay on Delivery</label><br>
+                                <input type="radio" id="card" name="payment" value="card" checked>
+                                <label for="card">Debit/Credit Card</label><br>
+                            </form> 
+                            <p id="info">-Pay securely via your Mastercard,Visa and Verve cards.<br>-Cards payments are supported for all banks.</p>
+
+                            <img src="Image 1.png" alt=" "> <img src="Image 2.png" alt=" "> <img src="Image 3.png" alt=" ">
+
+                            <p class="amount">Subtotal <span>N 3,039.24</span></p>
+                            <p class="amount">Shipping Amount <span>N 550</span></p>
+                        
+                        </div>
+                        <p><strong>Total<span>N 3,589.24</span></strong></p>
+                    </div>
+
+                    <div class="order">
+                        <a href="#" class="btn order-btn">PLACE ORDER</a>
+                        <p>By placing your order you agree to our Terms & Conditions, privacy and returns policies. You also consent to some of your data being stored by XYZ, which may be used to make future shopping experiences better for you.</p>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>CHECKOUT</h3>
+                    <div>
+                        <p><strong>IN YOUR CART</strong></p>
+                        <ul>
+                            <li>Subtotal <span>N 10,038.24</span></li>
+                            <li>Shipping amount <span>N 550</span></li>
+                            <li><strong>Total</strong><span>N 10,588.24</span></li>
+                        </ul>
+
+                        <h3>ORDER DETAILS</h3>
+                        <table>
+                            <tr>
+                                <td><img src="Image 154.png" alt=" "></td>
+                                <td>Hollister short sleeve crew neck<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,039.24</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="Image 142.png" alt=" "></td>
+                                <td>Faded Crewneck T-shirt<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,999.00</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="Image 116.png" alt=" "></td>
+                                <td>Nike mini swoosh oversized t-shirt dress<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,000.00</span></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <h4>MODIFY CART</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copy">
+                <p><small>Copyright &copy; 2020 All rights reserved.</small></p>
+                <p><small>Privacy & Cookies | Ts & Cs | Accessibility</small></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00000045;
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+    text-align: center;
+}
+
+h3 {
+    font: bold  Segoe UI;
+    text-align: left;
+}
+
+.container {
+    margin-top: 90px;
+    margin-left: 30%; 
+    margin-right: 30%;
+    width: 40%;
+    max-width: 1920px;
+}
+
+.sign-in {
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 5px 10px 40px 40px;
+}
+.cancel {
+    text-align: right;
+    color: #707070;
+}
+#main {
+    margin-left: 10%;
+    margin-right: 15%;
+}
+input {    
+    border: 1px solid rgb(232, 232, 232);
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#check {
+    width: 10px;
+    height: 10px;
+    padding-left: 0;
+    color: #111111;
+    background-color: #FFFFFF;
+    border: 1px solid #111111;
+}
+
+#forgot {
+    text-align: right;
+    padding-left: 25px;
+    color: #757575;
+}
+#check, #forgot {
+    padding-bottom: 1rem;
+}
+
+form p {
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    background: #111111 0% 0% no-repeat padding-box;
+}
+.fa-google {
+    position: absolute;
+    left: 38%;
+    padding-top: 2px;
+    /* color: #111111; */
+}
+#mini {
+    background-color: #FFFFFF;
+    padding: 15px 0;
+    text-align: center;
+}
