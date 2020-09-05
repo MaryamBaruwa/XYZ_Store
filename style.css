@@ -85,6 +85,9 @@ img {
 }
 
 /* Showcase area */
+#current {
+    color: #707070;
+}
 .showcase-container {
     position: relative;
     top: 93px;

@@ -40,6 +40,11 @@ img {
     display: inline-block;
 }
 
+.btn-secondary {
+    background-color: #111111;
+    color: #ffffff;
+}
+
 /* Nav bar */
 #navbar {
     background-color: #ffffff;
@@ -121,6 +126,9 @@ img {
 }
 
 /* Show-case Area */
+#current {
+    color: #707070;
+}
 .showcase-container {
     position: relative;
     top: 93px;
@@ -140,23 +148,17 @@ img {
     width: 50%;
 }
 .showcase-arrivals {
-    /* height: 500px; */
-    padding-top: 10%;
-    /* width: 40%; */
-}
-.showcase-arrivals h1 {
     text-align: center;
+    padding-top: 10%;
+}
+.showcase-arrivals h1 {    
     font: normal bold 64px/80px Arial;
 }
 .showcase-arrivals p {
-    text-align: center;
     padding-bottom: 2rem;
     color: #757575;
 }
-.btn-secondary {
-    background-color: #111111;
-    color: #ffffff;
-}
+
 
 /* Section */
 .products-category {

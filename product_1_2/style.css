@@ -127,6 +127,9 @@ img {
     padding-top: 15px;
     padding-bottom: 7rem; 
 }
+#current {
+    color: #707070;
+}
 
 /* Section */
 section {
