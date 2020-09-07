@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Regular;
+    background: #FFFFFF;
+    color: #111111;
+    letter-spacing: 0px;
+}
+header, section {
+    margin-left: 5%; 
+    /* margin-right: 5%; */
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+}
+li {
+    list-style: none;
+}
+img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    width:auto\9;
+    object-fit: cover;
+}
+
+/* Utility classes */
+.container{
+    width: auto;
+    max-width: 1920px; 
+}
+.btn {
+    padding: 10px 44px 10px 44px;
+    border: 1px solid #111111;
+    font: Regular 16px/21px Segoe UI;
+    display: inline-block;
+}
+
+/* Nav bar */
+#navbar {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    opacity: 1; 
+    z-index: 1000;
+}
+#main-nav {
+    width: 100%;
+    padding-left: 9%;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo h1{
+    text-align: left;
+    font-family: Chiller;
+    font-size: 32px/37px;
+}
+.search {
+    display: flex;
+}
+.search-content {
+    display: flex;
+    width: 500px;
+    height: 32px;
+    padding-right: 5px;
+}
+.fa-search {
+    color: #757575;
+    padding-top: 10px;
+    padding-left: 1rem;
+    border: 1px solid rgb(232, 232, 232);
+    min-width: 20px;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    border-right: none;
+}
+#search-input {
+    width: 100%;
+    border: 1px solid rgb(232, 232, 232);
+    outline: none;
+    border-left: none;
+}
+#search_box {
+    cursor: pointer;
+    height: 32px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: #EC7D55 0% 0% no-repeat padding-box;    font: normal normal bold 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    border: 0px solid #111111;
+}
+#nav2 {
+    display: flex;
+}
+#nav2 i {
+    padding-left: 2rem;
+}
+
+#nav1 {
+    margin-left: 0%;
+    padding-left: 5%;
+    margin-right: -5%;
+    display: flex;
+    background: #FBFBFB 0% 0% no-repeat padding-box;
+}
+#nav1 li {
+    padding-top: 10px;
+    padding-right: 3rem;
+    padding-bottom: 10px;
+    text-align: left;
+    font: normal normal normal 16px/21px Segoe UI;
+}
+
+/* Show-case Area */
+.showcase-container {
+    position: relative;
+    top: 93px;
+    height: 800px;
+    padding-top: 15px;
+    padding-bottom: 7rem;
+    margin-right: 5%; 
+}
+#current {
+    color: #707070;
+}
+.showcase-content {
+    background-color: #FFFFFF;
+    padding: 2rem 0 1rem 2rem;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 800px;
+    grid-template-columns: 70px repeat(2, 1fr) ;
+    grid-column-gap: 10px;
+}
+.views li {
+    height: 85;
+    width: 66;
+    padding-bottom: 10px;
+}
+.views .share {
+    padding-top: 7rem;
+}
+#details .mini-details {
+    padding-bottom: 10px;
+}
+.mini-details h2 {
+    font: normal bold 35px/40px Arial;
+}
+.mini-details h3 {
+    font: normal normal 600 28px/60px Segoe UI;
+    border-bottom: 0.02px solid #92ABA7;
+}
+#dr {
+    color: #757575;
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+#details div p {
+    font-weight: 600;
+}
+#color, #size, #cart {
+    padding-top: 2rem;
+}
+#color {
+    position: relative;
+}   
+#color ul {
+    display: flex;
+}
+#one, #two, #third {
+    margin-top: 10px;
+    width: 32px;
+    height: 16px;
+    margin-right: 1rem;
+}
+#one {
+    background-color: #003B59;
+}
+#two {
+    background-color: #2680EB;
+}
+#third {
+    background-color: #92ABA7;
+}
+.assistant {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.assistant a {
+    text-decoration: underline;
+    padding-right: 10px;    
+}
+.assistant span {
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+/* #line {
+    border-bottom: 1px solid #111111;
+} */
+#size ul {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    border-bottom: 1px solid #92ABA7;
+}
+#size li {
+    padding-bottom: 7px;
+}
+#medium {
+    padding: 0 7px 0 7px;
+    border-bottom: 3px solid #111111;
+}
+#inf, #inf a {
+    font: normal normal normal 18px Segoe UI;
+    padding-top: 15px;
+    color: #757575;
+}
+#inf a {
+    text-decoration: underline;
+}
+#quantity {
+    padding-top: 20px;
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+#quantity input {
+    width: 40px;
+    padding-left: 14px;
+}
+.btn-cart {
+    border: 1px solid #111111;
+    background-color: #111111 ;
+    color: #ffffff;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+}
+#cart p {
+    width: 80%;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 12px;
+}
+#cart-one {
+    padding-right: 1rem;
+    border-right: 0.2px solid #92ABA7;
+}
+#cart-two {
+    padding-left: 1rem;
+}
+#size-help {
+    margin-top: 2rem;
+    padding: 7px 4px 1rem 4px;
+    width: 350px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+#sizehelp1 {
+    font: normal normal bold;
+
+}
+#sizehelp2 {
+    color: #757575;
+    padding-top: 3px;
+    font: normal normal normal ;
+}
+.decor {
+    text-decoration: underline;
+    color: #757575;
+}
