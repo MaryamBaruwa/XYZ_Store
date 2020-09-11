@@ -115,19 +115,19 @@ img {
 
 #shopnow h1{
     text-align: left;
-    font: Bold 64px/74px Arial;
+    font: Bold 74px/74px Arial;
     letter-spacing: 0px;
     color: #111111; 
     z-index: 3;
 }
 #shopnow p{
     color: #757575;
-    font-size: 16px/21px;
+    font-size: 21px/21px;
 }
 
 .showcase-content a {
     position: absolute;
-    top: 370px;
+    top: 360px;
     padding: 20px 54px 9px 44px;
     background-color: #ffffff;
     border-top: none;

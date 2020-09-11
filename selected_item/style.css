@@ -9,7 +9,7 @@ body {
     color: #111111;
     letter-spacing: 0px;
 }
-header, section {
+header, section, article {
     margin-left: 5%; 
     /* margin-right: 5%; */
 }
@@ -139,9 +139,9 @@ img {
     padding: 2rem 0 1rem 2rem;
     height: 70vh;
     display: grid;
-    grid-template-rows: 800px;
+    grid-template-rows: 880px;
     grid-template-columns: 70px repeat(2, 1fr) ;
-    grid-column-gap: 10px;
+    grid-column-gap: 1rem;
 }
 .views li {
     height: 85;
@@ -159,7 +159,7 @@ img {
 }
 .mini-details h3 {
     font: normal normal 600 28px/60px Segoe UI;
-    border-bottom: 0.02px solid #92ABA7;
+    border-bottom: 0.02px solid #E8E8E8;
 }
 #dr {
     color: #757575;
@@ -211,14 +211,12 @@ img {
     font-weight: bold;
     letter-spacing: 0.7px;
 }
-/* #line {
-    border-bottom: 1px solid #111111;
-} */
+
 #size ul {
     display: flex;
     width: 35%;
     justify-content: space-between;
-    border-bottom: 1px solid #92ABA7;
+    border-bottom: 1px solid #E8E8E8;
 }
 #size li {
     padding-bottom: 7px;
@@ -254,14 +252,20 @@ img {
     font-weight: 600;
 }
 #cart p {
+    position: relative;
     width: 80%;
     text-align: center;
     font-weight: normal;
     padding-top: 12px;
 }
+.cart-lock {
+    position: absolute;
+    right: 11%;
+    text-align: center;
+}
 #cart-one {
     padding-right: 1rem;
-    border-right: 0.2px solid #92ABA7;
+    border-right: 0.2px solid #E8E8E8;
 }
 #cart-two {
     padding-left: 1rem;
@@ -274,7 +278,6 @@ img {
 }
 #sizehelp1 {
     font: normal normal bold;
-
 }
 #sizehelp2 {
     color: #757575;
@@ -284,4 +287,251 @@ img {
 .decor {
     text-decoration: underline;
     color: #757575;
+}
+
+/* Product detail */
+dt, .details-content p h3 {
+    padding-bottom: 1rem;
+    font: normal normal bold Arial;
+}
+.fa-caret-down {
+    color: #EC7D55;
+}
+dd {
+    margin-left: 5%;
+}
+#first {
+    display: flex;
+    width: 80%;
+    border: 1px solid #E8E8E8;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#first li {
+    padding: 8px 65px;
+}
+#i {
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+}
+#ii {
+    border-bottom: 8px solid #111111;
+    border-right: 1px solid #E8E8E8;
+}
+#second {
+    width: 70%;
+    padding: 1rem 0 2rem 1rem;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: repeat(2, 1fr);
+}
+#second li {
+    padding-bottom: 1rem;
+    list-style: square
+}
+.details-content div{
+    background-color: #F5F5F5;
+    margin-left: 5%;
+    width: 190px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.details-content div p {
+    text-align: left;
+    font: normal normal bold 35px/24px Arial;
+
+}
+.star, .fa-star-half {
+    color: darkorange;
+}
+#rate-review {
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+#rate div h3{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#rate {
+    padding-right: 4rem;
+}
+#rating {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E8E8E8;
+}
+#rating li label {
+    text-decoration: underline;
+    font: normal normal bold 16px/24px Segoe UI;
+    padding-right: 2rem;
+}
+meter {
+    width: 220px;
+}
+meter::-webkit-meter-optimum-value {
+    background-color: #EC7D55;
+}
+#cust {
+    padding: 2rem 3px;
+    width: 200px;
+}
+#cust h3 {
+    font: normal normal bold 35px/0 Arial;
+}
+#rate div p {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font: normal normal normal 15px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+#reviews {
+    width: 50%;
+}
+.review {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid  #E8E8E8;
+}
+
+.review .date {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+} 
+.review h3 {
+    font: normal normal bold 22px/20px Segoe UI;
+    padding-bottom: 10px;
+}
+.review p {
+    text-align: left;
+    font: normal normal normal 15px Segoe UI;
+    padding-bottom: 10px;
+}
+.fa-check-circle {
+    color: #5887F9;
+}
+.btns {
+    margin-top: 1rem;
+    width: 150px;
+    height: 48px;
+    border: 1px solid #111111;
+    font: Regular 16px/21px Segoe UI;
+    text-align: center;
+    padding: 13px 0;
+}
+.btn-more {
+    margin-right: 4rem;
+}
+
+
+
+
+
+/* Article area */
+
+.article-container p {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #F5F5F5;
+    font: normal normal bold Arial;
+}
+.product-grid1 {
+    padding-top: 2rem;
+    margin-left: 10%;
+    margin-right: 30%;
+    display: grid;
+    padding-bottom: 5rem;
+    grid-template-rows: 320px 42px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+.product-grid2 {
+    margin-left: 0;
+    grid-template-rows: 370px 42px 20px;
+}
+.product-grid1 span {
+    position: relative;
+}
+.product-grid1 p {
+    border: none;
+}
+.product-grid1 i {
+    position: absolute;
+    bottom: 15px;
+    right: 4%;
+    background-color: #ffffff;
+    color: #707070;
+    padding: 5px 5px 5px 5px;
+    border-radius: 50% 50%;
+    opacity: 1;
+}
+.product-grid1 .fa-lock {
+    color: #111111;
+    padding: 8px 8px 8px 8px;
+}
+
+/* Main Footer */
+#main-footer {
+    background-color: #FBFBFB;
+    padding-top: 3rem;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.footer-container {
+    display: grid;
+    grid-template-rows: 25px 150px ;
+    grid-template-columns: 420px repeat(4, 1fr);
+    grid-template-areas:
+        "head  head head head head"
+        "main main main main main";
+    padding-bottom: 3rem;
+}
+.footer-container p strong {
+    display: inline-block;
+    grid-area: head;
+    padding-bottom: 2rem;
+    text-align: left;
+    font: normal normal bold 16px/21px Segoe UI;
+}
+.footer-container p {
+    grid-area: main;
+    padding-bottom: 1rem;
+}
+.news-letter{
+    padding-right: 3rem;
+}
+#email {
+    border: 1px solid #111111;
+    padding: 12px 50px 12px 10px;
+}
+#subscribe {
+    border: 1px solid #111111;
+    background-color: #111111 ;
+    color: #ffffff;
+    padding: 13px 26px;
+    text-align: center;
+    font: normal normal normal 14px/12px Segoe UI;
+    letter-spacing: 0px;    
+}
+.social {
+    padding-right: 2rem;
+}
+.social a {
+    color: #757575;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
 }
