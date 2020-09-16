@@ -42,11 +42,10 @@ img {
 sup {
     background-color: #EC7D55;
     color: #FFFFFF;
-    padding: 1px 2px 1px 2px;
+    padding: 2px 5px;
     border-radius: 50% 50%;
 }
 .remove {
-    padding-left: 1rem;
     color: #EC7D55;
 }
 /* Nav bar */
@@ -90,6 +89,7 @@ sup {
     padding-bottom: 1rem;
     padding-right: 1rem;
     border-right: none;
+    color: #757575;
 }
 #search-input {
     width: 100%;
@@ -129,6 +129,81 @@ sup {
     font: normal normal normal 16px/21px Segoe UI;
 }
 
+/* Section */
+#wishlist {
+    position: relative;
+    top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.wishlist-container {
+    margin: 0 15% 0 10%;
+}
+.wishlist-content h3 {
+    font: normal normal bold 24px/80px Arial;
+}
+.wishlists {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.wishlist-left {
+    display: flex;
+}
+.wishlist-left img {
+    height: 120px;
+    padding-right: 1rem;
+}
+.wishlist-left p {
+    font: normal normal normal 14px/23px Segoe UI;
+}
+.wishlist-right {
+    width: 420px;
+}
+.wishlist-right img {
+    height: 90px;
+    padding-right: 8px;
+    padding-bottom: 14px;
+}
+.wishlist-right #select {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+select {
+    height: 30px;
+    background-color: #FBFBFB;
+    border: none;
+    padding-left: 8px;
+}
+#size {
+    width: 330px;   
+}
+#qty {
+    width: 75px;
+}
+.wishlist-right span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #111111;
+    height: 30px;
+}
+#fit {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+/* #fit img {
+    margin-top: 2rem;
+    height: 40px;
+    width: 40px;
+}
+/* #fit span {
+    align-self: center;
+    /* margin-top: -1rem; */
+    font: normal normal normal 16px Segoe UI;
+} */ */
 
 
 /* Main Footer */
@@ -177,9 +252,6 @@ sup {
 .social {
     padding-right: 2rem;
 }
-.social a {
-    color: #757575;
-}
 
 .copy {
     display: flex;
@@ -187,4 +259,5 @@ sup {
     padding-top: 4rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
+    color: #757575;
 }

@@ -33,10 +33,11 @@
                         <p><strong>DELIVERY ADDRESS</strong></p>
                         <ul>
                             <li><input type="text" name="FirstName" placeholder="FIRSTNAME"><input type="text" name="LastName" placeholder="LASTNAME"></li>
-                            <li><input type="text" name="address" placeholder="STREET ADDRESS, P.O BOX"></li>
+                            <li><input type="text" id="address" name="address" placeholder="STREET ADDRESS, P.O BOX"></li>
                             <li><input type="text" name="city" placeholder="CITY/TOWN"><input type="text" name="State" placeholder="STATE"></li>
                             <li><input type="email" name="Email" placeholder="EMAIL"><input type="tel" name="Telephone" placeholder="PHONE NO."></li>
                         </ul>
+                        <p id="min"><span> </span><small >E.g 08133000333</small></p>
                         <a href="#" class="btn btn-secondary">SAVE & CONTINUE</a>
                     </div>
 
@@ -45,12 +46,12 @@
                     <table>
                         <tr>
                             <td>N 1,500</td>
-                            <td>Door Delivery:<br>Delivered on or before May 14</td>
+                            <td>Door Delivery:<br class="delivers">Delivered on or before May 14</td>
                             <td><br><input type="radio" name="delivery" id="door" value="door" checked></td>
                         </tr>
                         <tr>
                             <td>N 550</td>
-                            <td>Pick up Station<br>Delivered on or before May 14</td>
+                            <td>Pick up Station<br class="delivers">Delivered on or before May 14</td>
                             <td><br><input type="radio" name="delivery" id="pick" value="pick"></td>
                         </tr>
                         <tr>
@@ -64,58 +65,61 @@
                     <div class="payment">
                         <p><strong>PAYMENT<span>N 3,589.24</span></strong></p>
                         <div>
-                            <p>How do you want to pay for your order?</p>
+                            <p class="pay">How do you want to pay for your order?</p>
 
                             <form method="POST">
                                 <input type="radio" id="pay" name="payment" value="pay">
-                                <label for="pay">Pay on Delivery</label><br>
+                                <label for="pay"> Pay on Delivery </label><br> <br>
                                 <input type="radio" id="card" name="payment" value="card" checked>
-                                <label for="card">Debit/Credit Card</label><br>
+                                <label for="card">  Debit/Credit Card</label><br>
                             </form> 
-                            <p id="info">-Pay securely via your Mastercard,Visa and Verve cards.<br>-Cards payments are supported for all banks.</p>
+                            <p id="info"> <small>-Pay securely via your Mastercard,Visa and Verve cards.<br>-Cards payments are supported for all banks. </small></p>
 
-                            <img src="Image 1.png" alt=" "> <img src="Image 2.png" alt=" "> <img src="Image 3.png" alt=" ">
+                            <div id="visa"><img src="Image 1.png" alt=" "> <img src="Image 2.png" alt=" "> <img src="Image 3.png" alt=" "> </div>
 
-                            <p class="amount">Subtotal <span>N 3,039.24</span></p>
-                            <p class="amount">Shipping Amount <span>N 550</span></p>
+                            <p class="amount">Subtotal <span>N3,039.24</span></p>
+                            <p class="fifty">Shipping Amount <span>N 550 </span></p>
                         
                         </div>
-                        <p><strong>Total<span>N 3,589.24</span></strong></p>
+                       
+                           <strong class="total">Total<span>N 3,589.24</span></strong>
+                        
+
                     </div>
 
                     <div class="order">
                         <a href="#" class="btn order-btn">PLACE ORDER</a>
-                        <p>By placing your order you agree to our Terms & Conditions, privacy and returns policies. You also consent to some of your data being stored by XYZ, which may be used to make future shopping experiences better for you.</p>
+                        <p><small>By placing your order you agree to our <a href="#" class="decor">Terms & Conditions,</a>  <a href="#" class="decor">privacy</a> and <a href="#" class="decor"></a> <a href="#" class="decor">returns<br>policies.</a> You also consent to some of your data being stored by XYZ, which may be <br>used to make future shopping experiences better for you.</small></p>
                     </div>
                 </div>
-                <div class="order-summary">
-                    <h3>CHECKOUT</h3>
-                    <div>
+                <div class="checkout-content2">
+                    <h3>ORDER SUMMARY</h3>
+                    <div class="order-summary">
                         <p><strong>IN YOUR CART</strong></p>
                         <ul>
                             <li>Subtotal <span>N 10,038.24</span></li>
-                            <li>Shipping amount <span>N 550</span></li>
+                            <li id="fifty">Shipping amount <span>N 550</span></li>
                             <li><strong>Total</strong><span>N 10,588.24</span></li>
                         </ul>
 
-                        <h3>ORDER DETAILS</h3>
-                        <table>
-                            <tr>
-                                <td><img src="Image 154.png" alt=" "></td>
-                                <td>Hollister short sleeve crew neck<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,039.24</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src="Image 142.png" alt=" "></td>
-                                <td>Faded Crewneck T-shirt<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,999.00</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src="Image 116.png" alt=" "></td>
-                                <td>Nike mini swoosh oversized t-shirt dress<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,000.00</span></td>
-                            </tr>
+                        <h4>ORDER DETAILS</h4>
+                        
+                            <div class="order-details">
+                                <img src="Image 154.png" alt=" ">
+                                <p>Hollister short sleeve crew neck<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,039.24</span></p>
+                            </div>
+                            <div class="order-details">
+                                <img src="Image 142.png" alt=" ">
+                                <p>Faded Crewneck T-shirt<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,999.00</span></p>
+                            </div>
+                            <div class="order-details">
+                                <img src="Image 116.png" alt=" ">
+                                <p>Nike mini swoosh oversized t-shirt dress<span><br>Colour: Black<br>Size: M<br>Quantity: 1<br>N 3,000.00</span></p>
+                            </div>
                             
-                        </table>
+                        
                     </div>
-                    <h4>MODIFY CART</h4>
+                    <h4 id="modify">MODIFY CART</h4>
                 </div>
             </div>
         </div>

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Regular;
+    background: #FFFFFF;
+    color: #111111;
+    letter-spacing: 0px;
+}
+nav {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+a {
+    text-decoration: none;
+    color: #111111;
+}
+li {
+    list-style: none;
+}
+img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    width:auto\9;
+    object-fit: cover;
+}
+
+/* Utility classes */
+.container{
+    width: auto;
+    max-width: 1920px; 
+}
+
+sup {
+    background-color: #EC7D55;
+    color: #FFFFFF;
+    padding: 2px 5px ;
+    border-radius: 50% 50%;
+}
+
+/* Nav bar */
+#navbar {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    opacity: 1; 
+    z-index: 1000;
+    border-bottom: 1px solid #E4E4E4;
+}
+#main-nav {
+    width: 100%;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo h1{
+    text-align: left;
+    font-family: Chiller;
+    font-size: 32px/37px;
+}
+
+/* section */
+.checkout-container {
+    position: relative;
+    top: 3rem;
+    padding: 1rem 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-container h3 {
+    padding-bottom: 1rem;
+    font: normal normal bold 20px Arial;
+}
+.delivery-address, .delivery-option, .payment, .order, .order-summary {
+    box-shadow: 0px 6px 12px #0000000D;
+    border: 0.5px solid #E4E4E4;
+}
+.checkout-content div {
+    padding-top: 5px  0 ;
+    padding-right: 15px;
+    padding-left: 15px ;
+    margin-bottom: 1rem;
+}
+.checkout-content div p strong {
+    display: flex;
+    margin: 0px -15px;
+    padding: 5px 3rem 5px 15px;
+    border-bottom: 0.5px solid #E4E4E4;
+    justify-content: space-between;
+}
+.delivery-address {
+    padding-bottom: 2rem;
+}
+.delivery-address li {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-address li input {
+    padding-left: 9px;
+    width: 234px;
+    height: 36px;
+    border: 1px solid #E4E4E4;
+}
+#address {
+    width: 100%;
+}
+#min {
+    width: 391px;
+    display: flex;
+    justify-content: space-between;
+    color: #707070;
+    padding-bottom: 20px;
+}
+.btn-secondary {
+    position: relative;
+    left: 65%;
+    background: #111111 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal normal 16px/21px Segoe UI;
+    color: #FFFFFF;
+    padding: 7px 1rem;
+}
+.delivery-option {
+    padding-bottom: 1rem;
+}
+.delivery-option td {
+    padding-right: 30px;
+}
+.delivery-option table td {
+    padding-top: 20px;
+}
+input[type='radio'] {
+    visibility: hidden;
+}
+
+input[type='radio']:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffffff;
+    content: ' ';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #757575;
+
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #EC7D55;
+    content: ' ';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #757575;
+}
+.pay {
+    padding-top: 10px;
+}
+.payment div form {
+    padding-top: 20px;
+}
+.payment div form label {
+    padding-left: 1rem;
+}
+
+#info {
+    padding-top: 12px;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    color: #757575;
+}
+#visa {
+    padding: 0 10% 0 5% ;
+    display: grid;
+    grid-template-rows: 100px ;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+.fifty {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #E4E4E4;
+}
+.total {
+    display: flex;
+    margin-top: -10px;
+    padding-left: 15px;
+    padding-right: 7px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+} 
+.order {
+    padding: 10px 15%;
+    text-align: center;
+}
+.order-btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 6px 0;
+    background: #111111 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+.order p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #757575;
+}
+.order p a{
+    text-decoration: underline;
+    color: #757575;
+}
+
+.order-summary p strong {
+    display: flex;
+    margin: 0px -15px;
+    padding: 5px 3rem 5px 15px;
+    border-bottom: 0.5px solid #E4E4E4;
+    justify-content: space-between;
+}
+
+.order-summary {
+    padding-top: 5px  0 ;
+    padding-right: 15px;
+    padding-left: 15px ;
+    margin-bottom: 1rem;
+}
+.order-summary ul{
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #E4E4E4;
+}
+.order-summary li {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#fifty {
+    padding-right: 42px;
+}
+.order-summary h4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.order-details {
+    padding-bottom: 1rem;
+    display: flex;
+}
+.order-details img {
+    padding-right: 1rem;
+    height: 80px;
+}
+.order-details span {
+    color: #707070;
+}
+#modify {
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Footer */
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-top: 4rem;
+    padding-right: 8%;
+    padding-bottom: 2rem;
+    color: #707070;
+}
