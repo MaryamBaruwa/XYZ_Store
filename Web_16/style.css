@@ -61,8 +61,7 @@ a {
 .measurement {
     display: flex;
     justify-content: space-between;
-    /* padding-bottom: 20px; */
-    /* margin-bottom: 20px; */
+    
 }
 .dot {
     padding-left: 200px;
