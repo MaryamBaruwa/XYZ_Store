@@ -389,7 +389,16 @@ meter::-webkit-meter-optimum-value {
     letter-spacing: 0px;
     color: #000000;
 }
-
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4px;
+    grid-column-gap: 3px; 
+    padding-bottom: 5px;
+}
+.grid span {
+    background-color: #111111;
+}
 #reviews {
     width: 50%;
 }
