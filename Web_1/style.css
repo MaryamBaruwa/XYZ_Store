@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+    text-align: center;
+}
+
+.container {
+    margin-top: 38px;
+    margin-left: 27%; 
+    margin-right: 27%;
+    width: 46%;
+    max-width: 1920px;
+    border: 1px solid #E4E4E4;
+}
+.fit {
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 5px 10px 20px 20px;
+}
+.cancel {
+    text-align: right;
+    color: #707070;
+}
+.fit-content {
+    text-align: center;
+}
+.fit-content p{
+    padding-top: 1rem;
+}
+h3 {
+    padding-top: 1rem;
+    padding-bottom: 25px;
+}
+small {
+    color: #707070;
+}
+img {
+    padding: 1rem 10px 2rem 1rem;
+    width: 100%;
+}
+
+
+.btn-secondary {
+    padding: 8px 1rem;
+    background: #111111 0% 0% no-repeat padding-box;
+    width: 164px;
+    height: 40px;
+    font: normal normal normal 12px/21px Segoe UI;
+    color: #FFFFFF;
+}
