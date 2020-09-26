@@ -39,6 +39,12 @@ img {
     font: Regular 16px/21px Segoe UI;
     display: inline-block;
 }
+
+.btn-secondary {
+    background-color: #111111;
+    color: #ffffff;
+}
+
 /* Nav bar */
 #navbar {
     background-color: #ffffff;
@@ -120,11 +126,14 @@ img {
 }
 
 /* Show-case Area */
+#current {
+    color: #707070;
+}
 .showcase-container {
     position: relative;
     top: 93px;
     padding-top: 15px;
-    padding-bottom: 10rem; 
+    padding-bottom: 10rem;  
 }
 .showcase-content {
     padding-top: 1rem;
@@ -139,24 +148,17 @@ img {
     width: 50%;
 }
 .showcase-arrivals {
+    text-align: center;
     padding-top: 10%;
 }
-.showcase-arrivals h1 {
-    text-align: center;
-    font: normal bold 54px Arial;
+.showcase-arrivals h1 {    
+    font: normal bold 64px/80px Arial;
 }
 .showcase-arrivals p {
-    text-align: center;
     padding-bottom: 2rem;
     color: #757575;
 }
-.showcase-arrivals span {
-    justify-content: center;
-} 
-.btn-secondary {
-    background-color: #111111;
-    color: #ffffff;
-}
+
 
 /* Section */
 .products-category {
@@ -201,7 +203,6 @@ img {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 .products-latest {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -230,8 +231,6 @@ img {
     margin-top: 35px;
     margin-bottom: 40px;
 }
-
-
 /* Main Footer */
 #main-footer {
     background-color: #FBFBFB;
