@@ -142,7 +142,8 @@ img {
 section {
     padding-bottom: 3rem;
 }
-#men {    
+#men {
+    width: 100%;    
     display: grid;
     grid-template-rows: 350px 350px;
     grid-template-columns: repeat(3,1fr);
